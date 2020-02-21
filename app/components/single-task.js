@@ -1,5 +1,14 @@
 import Component from '@glimmer/component';
+import { tracked } from '@glimmer/tracking';
+import { action } from '@ember/object';
 
 export default
-  class SingleTaskComponent extends Component {
+class SingleTaskComponent extends Component {
+    @action
+    pinT() {
+        this.args.pinTask()
+
+    }
+
+
 }
