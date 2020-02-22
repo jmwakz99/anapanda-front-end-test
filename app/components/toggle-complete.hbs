@@ -1,0 +1,17 @@
+<div>
+    {{#if @task.isComplete}}
+    <BsButton @type="info" onClick={{action (mut @task.isComplete) false}}>
+        Undo
+    </BsButton>
+    {{else}}
+    <BsButton @type="info" onClick={{action (mut @task.isComplete) true}}>
+        Done
+    </BsButton>
+    {{/if}}
+
+
+
+
+
+
+</div>
