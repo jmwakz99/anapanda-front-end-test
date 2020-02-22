@@ -8,7 +8,7 @@
 
       <div class="btn-group btn-group-sm" role="group">
 
-        <BsButton @type="secondary" {{on 'click' (fn this.pinT)}}>Pin</BsButton>
+        <BsButton @type="secondary" {{on 'click' (fn this.pinTask @task)}}>Pin</BsButton>
         {{#if @task.isComplete}}
         <BsButton @type="primary" onClick={{action (mut @task.isComplete) false}}>Undo</BsButton>
         {{else}}
